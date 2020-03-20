@@ -1,0 +1,7 @@
+The second part reads in each line, separates them by commas using split
+then using map makes each value a 1 if its  a "" (blank,null) and 0 otherwise
+then it adds them all up by line using reduce
+
+It acheives the same thing because it is the same thing functionally, just different way
+of getting there. It is counting 1 more than before for each blank in each line of the
+csv with 0 being the base case
