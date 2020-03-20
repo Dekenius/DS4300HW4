@@ -16,11 +16,12 @@ class Graph {
     redis.lrange(v, 0, redis.llen(v))
   }
 
-  def f[T](v: T) = v match {
-    case _: Int    => "Int"
-    case _: String => "String"
-    case _         => "Unknown"
-  }
+//   for debugging
+//   def f[T](v: T) = v match {
+//     case _: Int    => "Int"
+//     case _: String => "String"
+//     case _         => "Unknown"
+//   }
 
   // q is list of already seen nodes on this path
   // cur is current node to be explored
